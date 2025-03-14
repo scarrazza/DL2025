@@ -14,7 +14,7 @@ class Polynomial:
 
     def _execute(self, x):
         r = 0
-        for d in range(self.degree):
+        for d in range(self.degree + 1):
             r += self._parameters[d] * x ** d
         return r
 
